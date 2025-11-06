@@ -1,1 +1,143 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Uppsalas craayzies burger</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to BurgerOnline</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Select burger</h2>
+        <p>This is where you execute burger selection</p>
+        <div style="display: inline-block">
+          <h3>The Fire Burger</h3>
+          <img
+            src="public/img/fireburger.png"
+            alt="The Fire burger"
+            style="width: 250px"
+            height="250px"
+          />
+          <ul>
+            <li>Gluten</li>
+            <li>Lactose</li>
+            <li>Very hot</li>
+          </ul>
+        </div>
+        <div style="display: inline-block">
+          <h3>The Blob Burger</h3>
+          <img
+            src="public/img/blob_burger.png"
+            alt="The Blob burger"
+            style="width: 250px"
+            height="250px"
+          />
+          <ul>
+            <li>Fish</li>
+            <li>Animals that are alive</li>
+            <li>Very slimey</li>
+          </ul>
+        </div>
+        <div style="display: inline-block">
+          <h3>The Burnt Burger</h3>
+          <img
+            src="public/img/burnt_burger.png"
+            alt="The Burnt burger"
+            style="width: 250px"
+            height="250px"
+          />
+          
+          <ul>
+            <li>Coal</li>
+            <li>Lactose</li>
+            <li>Very dry</li>
+          </ul>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Customer information</h2>
+        <p>This is where you provide necessary information</p>
+        <h3>Delivery information:</h3>
+        <form>
+          <p>
+            <label for="Full name">Full name</label><br />
+            <input
+              type="text"
+              id="Full name"
+              name="fn"
+              required="required"
+              placeholder="Full name"
+            />
+          </p>
+          <p>
+            <label for="email">E-mail</label><br />
+            <input
+              type="email"
+              id="email"
+              name="em"
+              required="required"
+              placeholder="E-mail address"
+            />
+          </p>
+          <p>
+            <label for="Street">Street</label><br />
+            <input
+              type="text"
+              id="Street"
+              name="st"
+              required="required"
+              placeholder="Street"
+            />
+          </p>
+          <p>
+            <label for="House number">House number</label><br />
+            <input
+              type="number"
+              id="House number"
+              name="hn"
+              required="required"
+              placeholder="House number"
+            />
+          </p>
+        
+        <p>
+          <label for="payment_method">Payment method</label><be>
+            <select id="payment_method" name="pm">
+                <option>Swish</option>
+                <option>Klarna</option>
+                <option>Card</option>
+                <option>Natura</option>
+                <option>Cash</option>
+            </select>
+        </p>
+        
+  
+        <legend>Gender:</legend>
+          <div>
+            <input type="radio" id="sexChoice1" checked="checked" name="sexchoices"/>
+            <label for="sexChoice1">Man</label>
+
+            <input type="radio" id="sexChoice2" name="sexchoices" />
+            <label for="sexChoice2">Woman</label>
+
+            <input type="radio" id="sexChoice3" name="sexchoices" />
+            <label for="sexChoice3">Do not wish to provide</label>
+          </div>
+          
+        </form>
+      </section>
+      <div>
+            <button type="submit">
+              <img src="public/img/deliverysend.jpeg"> send delivery
+            </button>
+      </div>
+    </main>
+    <hr />
+    <footer>
+      <p>Copyright &copy; 2025 BurgerOnline</p>
+    </footer>
+  </body>
+</html>
