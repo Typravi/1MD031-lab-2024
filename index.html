@@ -3,57 +3,57 @@
   <head>
     <title>Uppsalas craayzies burger</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel ="stylesheet" href="/css/style.css" />
+
   </head>
 
   <body>
     <header>
       <h1>Welcome to BurgerOnline</h1>
+      <img src="/public/img/burgers_resturang.png" alt="burger resturant" id="headerimage"/>
     </header>
     <main>
-      <section>
+      <section id="burgers">
         <h2>Select burger</h2>
         <p>This is where you execute burger selection</p>
-        <div style="display: inline-block">
+        <div>
           <h3>The Fire Burger</h3>
           <img
-            src="public/img/fireburger.png"
+            src="/img/fireburger.png"
             alt="The Fire burger"
-            style="width: 250px"
-            height="250px"
+            style="width: 200px"
           />
           <ul>
-            <li>Gluten</li>
-            <li>Lactose</li>
-            <li>Very hot</li>
+            <li><span class="ingredients">Gluten</span></li>
+            <li><span class="ingredients">Lactose</span></li>
+            <li><span class="ingredients">Very hot</span></li>
           </ul>
         </div>
-        <div style="display: inline-block">
+        <div>
           <h3>The Blob Burger</h3>
           <img
-            src="public/img/blob_burger.png"
+            src="/img/blob_burger.png"
             alt="The Blob burger"
-            style="width: 250px"
-            height="250px"
+            style="width: 200px"
           />
           <ul>
-            <li>Fish</li>
-            <li>Animals that are alive</li>
-            <li>Very slimey</li>
+            <li><span class="ingredients">Gluten</span></li>
+            <li><span class="ingredients">Fish</span></li>
+            <li><span class="ingredients">Very slimey</span></li>
           </ul>
         </div>
-        <div style="display: inline-block">
+        <div>
           <h3>The Burnt Burger</h3>
           <img
-            src="public/img/burnt_burger.png"
+            src="/img/burnt_burger.png"
             alt="The Burnt burger"
-            style="width: 250px"
-            height="250px"
+            style="width: 200px"
           />
-          
           <ul>
-            <li>Coal</li>
-            <li>Lactose</li>
-            <li>Very dry</li>
+            <li><span class="ingredients">Coal</span></li>
+            <li><span class="ingredients">Lactose</span></li>
+            <li><span class="ingredients">Very dry</span></li>
           </ul>
         </div>
       </section>
@@ -104,7 +104,7 @@
           </p>
         
         <p>
-          <label for="payment_method">Payment method</label><be>
+          <h4>Payment method</h4>
             <select id="payment_method" name="pm">
                 <option>Swish</option>
                 <option>Klarna</option>
@@ -115,8 +115,8 @@
         </p>
         
   
-        <legend>Gender:</legend>
-          <div>
+        <h4>Gender:</h4>
+          <div class="gender-group">
             <input type="radio" id="sexChoice1" checked="checked" name="sexchoices"/>
             <label for="sexChoice1">Man</label>
 
@@ -127,7 +127,7 @@
             <label for="sexChoice3">Do not wish to provide</label>
           </div>
           
-        </form>
+        
       </section>
       <div>
             <button type="submit" background-image="public/img/deliverysend.jpeg"> send delivery</button>
