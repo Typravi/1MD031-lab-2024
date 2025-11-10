@@ -1,64 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Cormorant:wght@700&display=swap');
 body {
-    font-size: 12pt;
+    font-size: 2em;
+    font-family:'Times New Roman', Times, serif;
 }
-
+/* Såhär kommenterar man */
 p {
-    color: red;
+    font-size: 1em;
+    padding: 0.5rem 1rem;
+    line-height: 1.5;
 }
 
 h1 {
     font-family: 'Agbalumo';
-    font-size: 36pt;
-}
-main, header, footer, nav ul {
-    max-width: 40rem;
-    margin: 0 auto 0 auto;
-}
-main {
-    background-color: bisque;
+    font-size: 2.5em;
 }
 
-/* nav ul li {
-    display: inline-block;
-    background-color: grey;
-    padding: 1em;
-    margin: 1em;
-} */
+main {
+    background-color: white;
+}
 
 header {
-    background-image: url("../img/polacks.jpg");
-    background-size: cover;
+    position: relative;
+    height: 70%;
     overflow: hidden;
+    margin: 0em 2em 0em 2em;
+}
+
+header img {
     width: 100%;
-    height: 200px;
-    opacity: 0.5;
+    height: auto;
+    opacity: 0.6;
+    display: block;
 }
 
 header h1 {
-    width:40rem;
+    position: absolute; /*positionerar texten i bilden */
+    top: 50%;
+    width:100%;
     margin: 0 auto;
     text-align: center;
 }
 
-nav ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 9.25em);
-    gap: 1em;
-    padding: 0;
-}
 
-nav li {
-    display: block;
-    background-color: grey;
-    padding: 1em;
-}
-
-.Very-good {
-    color: green;
-}
-
-.Master {
-    color: green;
+.ingredients {
     font-weight: bold;
+}
+
+#contact {
+    border-color: black;
+}
+#contact h2 {
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+#contact h3 {
+    font-size: 1em;
+    margin: 0.5em;
+}
+#contact h4 {
+    font-size: 0.8em;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+}
+#contact p {
+    margin: 0.5em;
+    font-size: 0.5em;
+}
+#contact .gender-group label {
+    display: block;               /* one per line */
+    font-size: 1rem;
+    margin: 0.2rem 0;
+}
+#payment_method {
+    margin: 1em;
+}
+
+#burgers{
+    background-color: black;
+    color: white;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*frac är en frac av spacet som finns, repeat hjälper skriva ut frac tre gånger */
+}
+#burgers h2 {
+    font-size: 1.5em;
+}
+
+#burgers h2, p {
+    grid-column: 1 / -1; /*texten strechar ut över hela gridden vi skapat*/
+    text-align: left;
+}
+
+#burgers div {
+    text-align: left;
+    
+}
+#burgers img {
+    height: 200px;
+}
+
+#burgers ul {
+    list-style-type: disc;
+    list-style-position: inside;
+
+}
+
+
+button:hover {
+    color: greenyellow;
+    cursor: pointer; /*ändrar mus*/
+}
+
+section {
+    margin: 0.5em 2em;
+    padding: 2rem;
+    border: 2px dashed;
+}
+
+button {
+    margin: 2rem;
+    padding: 1rem;
+}
+section div{
+    margin: 1rem;
+    
+}
+div {
+    margin: 1em;
 }
