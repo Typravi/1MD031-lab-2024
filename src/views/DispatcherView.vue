@@ -120,6 +120,7 @@
   .highlightedDot {
     transform: scale(2);
     transition: 0.2s ease;
+    background-color: green !important;
 }
   </style>
   
