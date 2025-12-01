@@ -1,21 +1,23 @@
-[{
-    "name": "Fire Burger", 
-    "taste": "Very hot", 
+[
+  {
+    "name": "Fire Burger",
+    "taste": "Very hot",
     "url": "/img/fireburger.png",
-    "lactose": true, 
+    "lactose": true,
     "gluten": true
-},
-{
-    "name": "The Blob Burger", 
-    "taste": "Fishy", 
+  },
+  {
+    "name": "The Blob Burger",
+    "taste": "Fishy",
     "url": "/img/blob_burger.png",
-    "lactose": true, 
+    "lactose": true,
     "gluten": true
-},
-{
-    "name": "The Burnt Burger", 
-    "taste": "Coal", 
+  },
+  {
+    "name": "The Burnt Burger",
+    "taste": "Coal",
     "url": "/img/burnt_burger.png",
-    "lactose": true, 
+    "lactose": true,
     "gluten": true
-}]
+  }
+]
